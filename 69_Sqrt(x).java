@@ -1,3 +1,4 @@
+// Solution 1
 class Solution 
 {
     public int mySqrt(int x) 
@@ -38,3 +39,27 @@ class Solution
         return ans;
     }
 }
+
+// Solution 2
+
+class Solution 
+{
+    public int mySqrt(int x) 
+    {
+        // If x is 0, the square root is also 0
+        if (x == 0) 
+        {
+            return 0;
+        }
+
+        // Calculate the square root using logarithms:
+        // log(x) gives us ln(x), and multiplying by 0.5 computes ln(√x)
+        // exp() then raises 'e' to the power of ln(√x), effectively giving us √x
+        int res = (int) Math.round(Math.exp(0.5 * Math.log(x)));
+
+        // Verify if res^2 is greater than x (floating-point precision issue)
+        // If res * res is greater than x, return res - 1 to ensure truncation
+        return (long) res * (long) res > x ? res - 1 : res;
+    }
+}
+
