@@ -1,6 +1,5 @@
 class Solution
 {
-    // Method to find the peak element in the array
     public int findPeakElement(int[] nums)
     {
         // Initializing pointers for binary search: 'low' is the starting index, 'high' is the last index of the array
