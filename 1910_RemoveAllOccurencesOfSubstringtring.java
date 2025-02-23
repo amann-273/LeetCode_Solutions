@@ -28,7 +28,6 @@ class Solution
             // Adding the string from 0th index uptil the part substring is found and then concatenating it with the remaining string.
             s = s.substring(0,part_index) + s.substring(part_index + part.length());
         }
-        // retunring the value
         return s;
     }
 }
