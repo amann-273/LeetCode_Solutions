@@ -27,8 +27,6 @@ class Solution
                 temp = temp.next;
             }
         }
-        
-        // Return the modified linked list with duplicates removed
         return head;
     }
 }
