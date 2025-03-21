@@ -1,6 +1,6 @@
 class Solution // Kadane's Algorithm
 {
-    public int maxAscendingSum(int[] arr)
+    public int maxAscendingSum(int[] arr) 
     {
         int max_sum = arr[0]; // Initialize max_sum with the first element at least one element is needed in the sum
         int sum = arr[0]; // Initialize sum with the first element to track ascending subarray
