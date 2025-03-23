@@ -3,7 +3,7 @@ class Solution
     public int maxDepth(TreeNode root) 
     {
         // Base case: If the tree is empty (root is null), depth is 0
-        if (root == null) 
+        if (root == null)
         {
             return 0;
         }
